@@ -1,0 +1,77 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif;
+}
+
+body {
+    background-color: #ff00ff; /* Bright pink */
+    color: #00ff00; /* Bright green */
+    line-height: 1.6;
+    padding: 20px;
+    background-image: url('https://example.com/very-busy-background.jpg'); /* Replace with your choice of a busy background */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Blinking Text */
+@keyframes blink {
+    50% {
+        color: yellow;
+    }
+}
+
+.blink {
+    animation: blink 1s linear infinite;
+}
+
+/* Header Styles */
+header {
+    background: #0000ff; /* Bright blue */
+    color: yellow;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: 5px dashed red;
+}
+
+/* Form Styling */
+form {
+    background: rgba(255, 255, 0, 0.7); /* Semi-transparent yellow */
+    padding: 15px;
+    border: 3px dotted #00ffff; /* Cyan */
+    margin-top: 15px;
+}
+
+input, textarea, button {
+    background: rgba(0, 255, 255, 0.3); /* Semi-transparent cyan */
+    border: 1px solid red;
+    color: #ff00ff; /* Bright pink */
+}
+
+button:hover {
+    background: #ff69b4; /* Hot pink */
+}
+
+/* Popup Styles */
+.popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: lime;
+    padding: 20px;
+    border: 2px solid red;
+    z-index: 1000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Utility Classes */
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

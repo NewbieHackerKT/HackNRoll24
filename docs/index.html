@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ultimate Signup Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1 class="blink"><span class="highlight">Ultimate</span> Signup Challenge</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current blink"><a href="index.html">Home</a></li>
+                    <li class="blink"><a href="#">About</a></li>
+                    <li class="blink"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="popup" class="popup">Are you sure you're ready for this?</div>
+
+        <form id="signupForm">
+            <label for="typingTest">Type this backwards: "reppep delkcip fo kcep a dekcip repiP reteP"</label>
+            <input type="text" id="typingTest" name="typingTest" required>
+
+            <label for="captcha">Captcha: Identify the character 'X' in this image:</label>
+            <!-- Add captcha image here -->
+            <input type="text" id="captcha" name="captcha" required>
+
+            <label for="terms">Terms and Conditions:</label>
+            <textarea id="terms" name="terms" readonly>
+                <!-- Add long terms and conditions here -->
+            </textarea>
+            <input type="checkbox" id="agreeTerms" name="agreeTerms">
+            <label for="agreeTerms">I agree to the Terms and Conditions</label>
+
+            <label for="quiz">Quiz: What is the airspeed velocity of an unladen swallow?</label>
+            <input type="text" id="quiz" name="quiz" required>
+
+            <button type="submit" id="submitBtn">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
